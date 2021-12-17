@@ -68,9 +68,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## How To Use
 
-1. Clone this Github into your local folder with "git clone https://github.com/arindra97/belajar_laravel.git"
+1. Clone this Github into your local folder with ###git clone https://github.com/arindra97/belajar_laravel.git
 2. Open the folder after clone successfull
-3. Use terminal for Update Composer ("composer update")
+3. Use terminal for Update Composer ###composer update
 4. Copy file .env.example and rename it into .env
-5. generate key with ("php artisan key:generate")
-6. start the server with ("php artisan serve")
+5. generate key with ###php artisan key:generate
+6. start the server with ###php artisan serve
