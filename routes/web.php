@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +14,10 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('/', [ProductController::class, 'home'])->name('home');
 
-Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/products', [ProductController::class, 'viewProduct'])->name('products');
 
-Route::get('/product', [HomeController::class, 'product'])->name('product');
+Route::get('/edit/{$id}', 'App\Http\Controllers\ProductController@edit');
+
+Route::post('/input', [ProductController::class, 'input'])->name('input');
